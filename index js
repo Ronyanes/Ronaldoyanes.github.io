@@ -22,11 +22,6 @@ var product6 = document.getElementById("product6")
 var qty6 = document.getElementById("qty6")
 var price6 = document.getElementById("price6")
 
-var carts = document.getElementById("carts")
-var total = document.getElementById("total")
-var cash = document.getElementById("cash")
-var change = document.getElementById("change")
-
 
 function addOrder(){
     carts.textContent=""
@@ -81,7 +76,7 @@ function addOrder(){
         totalPrice += qty * price;
     }
     total.value = '₱ ' + totalPrice.toFixed(2);
-
+    calculateChange();
 }
 
 function calculateChange() {
@@ -94,3 +89,33 @@ function calculateChange() {
       change.value = '';
   }
 }
+
+function checkOut(){
+    alert('Thank you for purchase \n\nCOME AGAIN!!');
+    
+    carts.textContent = "";
+    total.value = '₱ 0.00';
+    cash.value = '';
+    change.value = '';
+    
+    // Reset all product quantities
+    qty1.value = '';
+    qty2.value = '';
+    qty3.value = '';
+    qty4.value = '';
+    qty5.value = '';
+    qty6.value = '';
+
+
+}
+
+qty1.addEventListener("keyup", addOrder);
+qty2.addEventListener("keyup", addOrder);
+qty3.addEventListener("keyup", addOrder);
+qty4.addEventListener("keyup", addOrder);
+qty5.addEventListener("keyup", addOrder);
+qty6.addEventListener("keyup", addOrder);
+
+cash.addEventListener("keyup", calculateChange);
+
+document.getElementById('checkOut').addEventListener('click', checkOut);
