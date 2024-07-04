@@ -91,7 +91,7 @@ function calculateChange() {
 }
 
 function checkOut(){
-    alert('Thank you for purchase 🥰 COME AGAIN 🥰!!');
+    alert('Thank you for purchase \n\nCOME AGAIN!!');
     
     carts.textContent = "";
     total.value = '₱ 0.00';
