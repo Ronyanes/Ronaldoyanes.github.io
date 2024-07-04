@@ -1,167 +1,80 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .header {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-        }
-        .header h2 {
-            margin: 0;
-        }
-        .hr {
-            border-top: 3px solid #343a40;
-            width: 60%;
-            margin: 20px auto;
-        }
-        .product-card {
-            background-color: #ffffff;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s, background-color 0.3s;
-        }
-        .product-card:hover img {
-            transform: scale(1.1);
-        }
-        .product-card .img-container {
-            background-color: #e9ecef; /* Background color for image container */
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .product-card img {
-            transition: transform 0.2s;
-            width: 200px;
-            height: 250px;
-        }
-        .product-label {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #343a40;
-            margin-top: 10px;
-        }
-        .price-label {
-            font-size: 1.1em;
-            color: #343a40;
-            margin-top: 10px;
-        }
-        .orders {
-            margin-top: 20px;
-        }
-        .form-control {
-            margin-top: 10px;
-        }
-        .container {
-            margin-top: 20px;
-        }
-        /* Specific hover background colors for each product */
-        #p1:hover {
-            background-color: yellow;
-        }
-        #p2:hover {
-            background-color: orange;
-        }
-        #p3:hover {
-            background-color: yellowgreen;
-        }
-        #p4:hover {
-            background-color: skyblue;
-        }
-        #p5:hover {
-            background-color: violet;
-        }
-        #p6:hover {
-            background-color: pink;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="row header text-center">
-            <div class="col-12">
-                <h2>RON'S NIKE SHOES SHOP</h2>
-                <p>By Ronaldo Yanes</p>
-                <hr class="hr" />
-            </div>
-        </div>
-        <div class="row">
-            <!-- Product 1 -->
-            <div class="col-md-4 text-center product-card" id="p1">
-                <label id="product1">Dunk Low Sneaker Black</label>   
-                <div class="img-container">
-                    <img src="N1.png" class="img-thumbnail"/>
+    <title>NIKE</title>
+    <head> 
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>RON'S NIKE SHOES SHOP🥰</h2>
+                    <h1></h2>Buy NIKE , JUST DO IT🥰</h1>
+                    <hr class="hr" />
                 </div>
-                <label id="price1">5000.00</label>
-                <input type="number" class="form-control" id="qty1" placeholder="Enter quantity"/><br>
             </div>
-            <!-- Product 2 -->
-            <div class="col-md-4 text-center product-card" id="p2">
-                <label id="product2">Air Jordan 1 Low</label>   
-                <div class="img-container">
-                    <img src="N2.png" class="img-thumbnail"/>
+            <h1 class="text text-center">Sale!!</h1>
+            <br>
+            <div class="row">
+                <div class="col-4 text-center">
+                    <label id="product1"> Dunk low sneaker black</label>
+                    <img src="N1.png" class="d-block w-100" alt="...">
+                    <label  id="price1">5500.00</label><br>
+                    <input type="number" class="form-control" id="qty1" placeholder="Enter quantity"/><br>
                 </div>
-                <label id="price2">5500</label>
-                <input type="number" class="form-control" id="qty2" placeholder="Enter quantity"/><br>
-            </div>
-            <!-- Product 3 -->
-            <div class="col-md-4 text-center product-card" id="p3">
-                <label id="product3">Dunk Low Rose Whispers Sneakers</label>   
-                <div class="img-container">
-                    <img src="N3.png" class="img-thumbnail"/>
+                <div class="col-4 text-center">
+                    <label id="product2"> Air Jordan 1 Low </label>
+                    <img src="N2.png" class="d-block w-100" alt="...">
+                    <label  id="price2">5000.00</label><br>
+                    <input type="number" class="form-control" id="qty2" placeholder="Enter quantity"/><br>
                 </div>
-                <label id="price3">6000.00</label>
-                <input type="number" class="form-control" id="qty3" placeholder="Enter quantity"/><br>
-            </div>
-        </div>
-        <div class="row">
-            <!-- Product 4 -->
-            <div class="col-md-4 text-center product-card" id="p4">
-                <label id="product4">Nike Air force 1 Low</label>   
-                <div class="img-container">
-                    <img src="N4.png" class="img-thumbnail"/>
-                </div>
-                <label id="price4">5500</label>
-                <input type="number" class="form-control" id="qty4" placeholder="Enter quantity"/><br>
-            </div>
-            <!-- Product 5 -->
-            <div class="col-md-4 text-center product-card" id="p5">
-                <label id="product5">Nike Airforce 1 Fresh Lace Up Sneakers</label>   
-                <div class="img-container">
-                    <img src="N5.png" class="img-thumbnail"/>
-                </div>
-                <label id="price5">6500.00</label>
+                <div class="col-4 text-center">
+                  <label id="product3"> Dunk low "rose whisper" Sneakers </label>
+                  <img src="N3.png" class="d-block w-100" alt="...">
+                  <label  id="price3">7000.00</label><br>
+                  <input type="number" class="form-control" id="qty3" placeholder="Enter quantity"/><br>
+              </div>
+              <div class="col-4 text-center">
+                  <label id="product4"> Nike Airforce 1 Low sneakers </label>
+                  <img src="N4.png" class="d-block w-100" alt="...">
+                  <label  id="price4">6000.00</label><br>
+                  <input type="number" class="form-control" id="qty4" placeholder="Enter quantity"/><br>
+              </div>
+              <div class="col-4 text-center">
+                <label id="product5"> Nike airforce 1 Fresh lace up Sneakers </label>
+                <img src="N5.png" class="d-block w-100" alt="...">
+                <label  id="price5">6500.00</label><br>
                 <input type="number" class="form-control" id="qty5" placeholder="Enter quantity"/><br>
             </div>
-            <!-- Product 6 -->
-            <div class="col-md-4 text-center product-card" id="p6">
-                <label id="product6">Airforce 1 Low Triple white</label>   
-                <div class="img-container">
-                    <img src="N6.png" class="img-thumbnail"/>
-                </div>
-                <label id="price6">7000.00</label>
+            <div class="col-4 text-center">
+                <label id="product6"> Air Force 1 '07 Low Triple White </label>
+                <img src="N6.png" class="d-block w-100" alt="...">
+                <label  id="price6">6500.00</label><br>
                 <input type="number" class="form-control" id="qty6" placeholder="Enter quantity"/><br>
             </div>
-        </div>
-        <div class="row orders">
-            <div class="col-12 text-center">
-                <label for="carts">Orders</label><br>
-                <textarea class="form-control" rows="15" id="carts" cols="200" readonly></textarea><br>
-                <input type="text" class="form-control border-0" id="total" readonly placeholder="Total">
-                <input type="number" class="form-control" id="cash" placeholder="Cash Tendered"/><br>
-                <input type="text" class="form-control border-0" id="change" readonly placeholder="Change"/>
+            
+                <div class="col-6">
+                  <br><br>
+                    <label for="carts"> Orders </label<br>
+                    <textarea class="form-control" rows="29" id="carts" cols="200" style="height: 400px;"> </textarea>
+                  </div> 
+                  <div class="col-6">
+                    <br><br>
+                    <input type="text" class="form-control border-0" id="total" readonly placeholder="Total"/>
+                    <br>
+                    <input type="number" class="form-control" id="cash" placeholder="Cash Tendered"/><br><br>
+                   
+                    <input type="text" class="form-control border-0" id="change" readonly placeholder="Change"/>
+                    <br>
+                    <button class="btn btn-primary" id="checkOut"> Check Out</button>
+                </div>
+                <hr><br><br><br><br>
             </div>
         </div>
-    </div>
-    <script src="app.js"></script>
-</body>
-</html>
+        <script src="index.js"></script>
+    </body>
+                        </html>
+
+            
