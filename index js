@@ -91,7 +91,7 @@ function calculateChange() {
 }
 
 function checkOut(){
-    alert('Thank you for purchase ayieeeeeeeeehhhhhhhhhh\n\nRide Safe GARRRRR!!');
+    alert('Thank you for purchase 🥰 COME AGAIN 🥰!!');
     
     carts.textContent = "";
     total.value = '₱ 0.00';
